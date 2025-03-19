@@ -1,0 +1,19 @@
+/* Fonts  */
+
+/* Orbitron : font-family: 'Orbitron', sans-serif; */
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron/static/Orbitron-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* font-family: 'Roboto Mono', monospace; */
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

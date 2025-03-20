@@ -1,22 +1,8 @@
 /* Fonts  */
 
-/* font-family: 'Orbitron', sans-serif; */
+/* font-family: "Poppins", sans-serif; */
 
-@font-face {
-    font-family: 'Orbitron';
-    src: url('../fonts/Orbitron/static/Orbitron-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* font-family: 'Roboto Mono', monospace; */
-
-@font-face {
-    font-family: 'Roboto Mono';
-    src: url('../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Paramêtre global */
 
@@ -24,11 +10,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
     background: #1f242d;
-    font-family: 'Roboto Mono', monospace;
 }
 
 /* Navbar */
@@ -44,15 +30,33 @@ a {
     top: 0;
     width: 100%;
     padding: 25px 9%;
-    background: slateblue;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    font-family: 'Orbitron', sans-serif;
 }
 
 .navbar .logo {
     font-size: 30px;
     font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 35px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: #FDCB58;
 }

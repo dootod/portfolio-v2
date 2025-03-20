@@ -1,6 +1,6 @@
 /* Fonts  */
 
-/* Orbitron : font-family: 'Orbitron', sans-serif; */
+/* font-family: 'Orbitron', sans-serif; */
 
 @font-face {
     font-family: 'Orbitron';
@@ -16,4 +16,43 @@
     src: url('../fonts/Roboto_Mono/static/RobotoMono-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+/* Paramêtre global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1f242d;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Navbar */
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    background: slateblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.navbar .logo {
+    font-size: 30px;
+    font-weight: 700;
 }
